@@ -160,6 +160,10 @@ body {
   justify-content: space-between;
 }
 
+.header__burger--btn {
+  display: none;
+}
+
 .header__logo {
   display: block;
   margin-right: 10px;
@@ -604,7 +608,7 @@ body {
 .faq__link {
   align-items: center;
   justify-content: space-between;
-  padding: 29px 0;
+  padding: 30px 0;
   outline: none;
   border-top: 1px solid var(--elipse-21-color, #CACACA);
   border-bottom: 1px solid var(--elipse-21-color, #CACACA);
@@ -676,7 +680,7 @@ body {
 .faq__h3 {
   margin-right: 20px;
   max-width: 1105px;
-  line-height: 32px;
+  line-height: 33px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -792,7 +796,6 @@ body {
 .footer__center {
   margin-right: 30px;
   max-width: 570px;
-  min-width: 410px;
 }
 
 .footer__h2 {
@@ -913,4 +916,273 @@ body {
 
 .footer__descr {
   color: var(--elipse-21-color, #CACACA);
+}
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .header__right {
+    min-width: 0;
+  }
+
+  .header {
+    padding: 26px 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger--btn {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 23px;
+  }
+
+  .header__burger--line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-color: var(--elipse-18-color);
+  }
+
+  .header__burger--line:first-child {
+    top: 0;
+  }
+
+  .header__burger--line:nth-child(2) {
+    top: 44%;
+    transform: translate(-50%);
+  }
+
+  .header__burger--line:last-child {
+    bottom: 0;
+  }
+
+  .header__logo {
+    margin: 0;
+    width: 150px;
+    height: 48px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero__content {
+    padding: 160px 77px;
+    background-image: url(../img/hero-1-1024px.png);
+  }
+
+  .hero__h1 {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about {
+    padding-top: 35px;
+  }
+
+  .about__content--top {
+    margin-bottom: 60px;
+  }
+
+  .about__list--left {
+    min-height: 640px;
+  }
+
+  .about__item--right {
+    padding: 64px 77px;
+  }
+
+  .how {
+    padding-top: 80px;
+  }
+
+  .how__content--top {
+    margin-bottom: 50px;
+  }
+
+  .how__item:not(:last-child) {
+    margin-right: 86px;
+  }
+
+  .how__content--bottom {
+    column-gap: 50px;
+  }
+
+  .how__descr {
+    margin-bottom: 26px;
+  }
+
+  .how__article {
+    width: 94%;
+  }
+
+  .faq {
+    padding-top: 82px;
+  }
+
+  .faq__h3 {
+    max-width: 750px;
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer__container {
+    justify-content: space-evenly;
+    gap: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .footer__content--right {
+    min-width: 0;
+  }
+
+  .footer__center {
+    margin: 0;
+  }
+
+  .footer__btn {
+    padding: 18px 38px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 11px 0;
+  }
+
+  .hero__content {
+    border-radius: 24px;
+    padding: 160px 40px;
+    background-image: url(../img/hero-1-768px.jpg);
+  }
+
+  .hero__h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__content--top {
+    margin-bottom: 54px;
+  }
+
+  .about__list--left {
+    min-height: 651px;
+  }
+
+  .about__item--left {
+    border-radius: 24px;
+  }
+
+  .about__item--content--left {
+    padding: 34px 40px;
+  }
+
+  .about__descr--left {
+    max-width: 366px;
+  }
+
+  .about__item--right {
+    border-radius: 24px;
+    padding: 35px 40px;
+  }
+
+  .about__item--svg--right {
+    margin-right: 17px;
+  }
+
+  .how {
+    padding-top: 76px;
+  }
+
+  .how__h2 {
+    margin-bottom: 49px;
+  }
+
+  .how__list {
+    justify-content: space-between;
+  }
+
+  .how__content--bottom {
+    flex-direction: column-reverse;
+    row-gap: 38px;
+  }
+
+  .how__img {
+    border-radius: 24px;
+    height: 284px;
+  }
+
+  .how__article {
+    width: 100%;
+  }
+
+  .how__descr br {
+    display: none;
+  }
+
+  .how__descr {
+    margin-bottom: 25px;
+  }
+
+  .how__btn {
+    padding: 19px 37px;
+  }
+
+  .faq {
+    padding-top: 49px;
+  }
+
+  .faq__h3 {
+    margin-right: 35px;
+  }
+
+  .footer {
+    margin-top: 114px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__center {
+    width: 81%;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+  }
 }
