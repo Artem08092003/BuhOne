@@ -918,6 +918,20 @@ body {
   color: var(--elipse-21-color, #CACACA);
 }
 
+@media (max-width: 1600px) {
+  .about__content--bottom {
+    flex-direction: column;
+  }
+
+  .about__list--left {
+    width: 100%;
+  }
+
+  .about__descr--left {
+    max-width: 60%;
+  }
+}
+
 @media (max-width: 1500px) {
   .container {
     padding: 0 50px;
@@ -1001,6 +1015,10 @@ body {
 
   .about__list--left {
     min-height: 640px;
+  }
+
+  .about__descr--left {
+    max-width: 58%;
   }
 
   .about__item--right {
@@ -1107,7 +1125,7 @@ body {
   }
 
   .about__descr--left {
-    max-width: 366px;
+    max-width: 65%;
   }
 
   .about__item--right {
@@ -1192,8 +1210,28 @@ body {
     padding: 0 15px;
   }
 
+  .btn {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .h3 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .descr {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
   .hero__content {
-    padding: 129px 40px;
+    padding: 110px 40px;
   }
 
   .hero__h1 {
@@ -1202,8 +1240,8 @@ body {
   }
 
   .hero__descr {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 25px;
   }
 
   .hero__descr br {
@@ -1212,13 +1250,132 @@ body {
 
   .hero__btn {
     padding: 20px 35px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
   }
 
-  .h2 {
-    font-size: 35px;
-    line-height: 45px;
+  .about__list--left {
+    min-height: 400px;
+  }
+
+  .about__item--left {
+    min-height: 400px;
+    height: 100%;
+  }
+
+  .about__item--content--left {
+    padding: 25px 30px;
+    min-height: 0;
+  }
+
+  .about__descr--left {
+    max-width: 60%;
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .about__btn--left {
+    padding: 15px 35px;
+  }
+
+  .about__list--right {
+    gap: 30px;
+  }
+
+  .about__item--right {
+    flex-direction: column;
+    padding: 30px 35px;
+  }
+
+  .about__item--content--right {
+    max-width: 100%;
+  }
+
+  .about__item--svg--right {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 100px;
+  }
+
+  .about__h3--right {
+    text-align: center;
+  }
+
+  .about__descr--right {
+    text-align: center;
+  }
+
+  .how__content--top {
+    margin-bottom: 40px;
+  }
+
+  .how__h2 {
+    margin-bottom: 40px;
+  }
+
+  .how__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .how__content--bottom {
+    row-gap: 30px;
+  }
+
+  .how__descr {
+    margin-bottom: 20px;
+  }
+
+  .how__btn {
+    padding: 15px 35px;
+  }
+
+  .faq__h2 {
+    margin-bottom: 25px;
+  }
+
+  .faq__h3 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .footer {
+    margin-top: 90px;
+  }
+
+  .footer__container {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  .footer__content--right {
+    justify-content: center;
+  }
+
+  .footer__btn {
+    padding: 16px 35px;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .footer__logo {
+    width: 200px;
+    height: 60px;
+  }
+
+  .footer__social--link svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__social--link:not(:last-child) {
+    margin-right: 20px;
   }
 }
 
@@ -1300,20 +1457,22 @@ body {
   }
 
   .about__item--left {
-    max-width: 400px;
-    height: 200px;
-    min-height: 0%;
+    position: static;
     border-radius: 16px;
     background-position: center top;
     overflow: visible;
+    height: 0;
+    min-height: 0;
+    padding-top: 200px;
   }
 
   .about__item--content--left {
-    flex-direction: column;
+    position: static;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: 8px;
+    flex-direction: column;
     min-height: 0;
-    bottom: -199px;
     padding: 0;
     background-color: transparent;
   }
@@ -1355,6 +1514,7 @@ body {
 
   .about__h3--right {
     margin-bottom: 4px;
+    text-align: left;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -1363,10 +1523,11 @@ body {
   .about__descr--right {
     font-size: 14px;
     line-height: 28px;
+    text-align: left;
   }
 
   .how {
-    padding-top: 61px;
+    padding-top: 63px;
   }
 
   .how__content--top {
@@ -1390,7 +1551,7 @@ body {
   }
 
   .how__content--bottom {
-    row-gap: 16px;
+    row-gap: 19px;
   }
 
   .how__img {
@@ -1399,11 +1560,13 @@ body {
   }
 
   .how__h3 {
+    margin-bottom: 12px;
     font-weight: 500;
     font-size: 18px;
   }
 
   .how__descr {
+    margin-bottom: 25px;
     font-size: 14px;
     line-height: 28px;
   }
@@ -1449,7 +1612,7 @@ body {
   }
 
   .footer {
-    margin-top: 60px;
+    margin-top: 56px;
   }
 
   .footer__container {
@@ -1513,7 +1676,7 @@ body {
     margin-right: 16px;
   }
 
-  .footer__social--link svg{
+  .footer__social--link svg {
     width: 40px;
     height: 40px;
   }
