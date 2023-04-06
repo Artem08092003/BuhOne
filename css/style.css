@@ -1495,6 +1495,18 @@ body {
     color: var(--elipse-12-color);
   }
 
+  .about__btn--left:focus {
+    color: var(--elipse-17-color);
+  }
+
+  .about__btn--left:hover {
+    color: var(--elipse-17-color);
+  }
+
+  .about__btn--left:active {
+    color: var(--elipse-17-color);
+  }
+
   .about__item--right {
     flex-direction: column;
     align-items: flex-start;
