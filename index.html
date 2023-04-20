@@ -8,6 +8,7 @@
   <title>Евклид</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -68,18 +69,26 @@
   <main class="main">
     <section class="hero">
       <div class="hero__container container">
-        <div class="hero__content">
-          <h1 class="hero__h1" id="hero">
-            Проектные решения<br>
-            любой сложности
-          </h1>
-          <p class="hero__descr descr">
-            Есть над чем задуматься: базовые сценарии поведения<br>
-            пользователей и по сей день остаются уделом проектантов
-          </p>
-          <button class="hero__btn btn btn--reset">
-            Заказать расчёт
-          </button>
+        <div class="swiper">
+          <div class="hero__content">
+            <h1 class="hero__h1" id="hero">
+              Проектные решения<br>
+              любой сложности
+            </h1>
+            <p class="hero__descr descr">
+              Есть над чем задуматься: базовые сценарии поведения<br>
+              пользователей и по сей день остаются уделом проектантов
+            </p>
+            <button class="hero__btn btn btn--reset">
+              Заказать расчёт
+            </button>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-1"></div>
+            <div class="swiper-slide swiper-slide-2"></div>
+            <div class="swiper-slide swiper-slide-3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -153,42 +162,84 @@
           </h2>
           <ul class="how__list list--reset flex">
             <li class="how__item">
-              <a class="how__link" href="#">
+              <button class="btn--reset how__link how__link--active" data-path="one">
                 1 шаг
-              </a>
+              </button>
             </li>
             <li class="how__item">
-              <a class="how__link" href="#">
+              <button class="btn--reset how__link" data-path="two">
                 2 шаг
-              </a>
+              </button>
             </li>
             <li class="how__item">
-              <a class="how__link" href="#">
+              <button class="btn--reset how__link" data-path="three">
                 3 шаг
-              </a>
+              </button>
             </li>
             <li class="how__item">
-              <a class="how__link" href="#">
+              <button class="btn--reset how__link" data-path="four">
                 4 шаг
-              </a>
+              </button>
             </li>
           </ul>
         </div>
         <div class="how__content--bottom flex">
-          <article class="how__article">
-            <h3 class="how__h3 h3">
-              Проводим консультацию
-            </h3>
-            <p class="how__descr descr">
-              Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации
-              современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
-              соответствующими инстанциями.<br>
-              А также представители современных социальных резервов, инициированные исключительно синтетически,
-              ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
-              с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
-              Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
-              особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-            </p>
+          <div class="how__article flex">
+            <article class="how__article--block how__content how__content--active" data-target="one">
+              <h3 class="how__h3 h3">
+                Проводим консультацию
+              </h3>
+              <p class="how__descr descr">
+                Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
+                спецификации
+                современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
+                соответствующими инстанциями.<br>
+                А также представители современных социальных резервов, инициированные исключительно синтетически,
+                ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
+                с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
+                особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+              </p>
+            </article>
+            <article class="how__article--block how__content" data-target="two">
+              <h3 class="how__h3 h3">
+                Составляем смету
+              </h3>
+              <p class="how__descr descr">
+                Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
+                стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+                инстанциями. А также представители современных социальных резервов, инициированные исключительно
+                синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых
+                исследований.
+              </p>
+            </article>
+            <article class="how__article--block how__content" data-target="three">
+              <h3 class="how__h3 h3">
+                Привлекаем подрядчиков
+              </h3>
+              <p class="how__descr descr">
+                Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа
+                прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории
+                является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую
+                зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель
+                организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание
+                показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности
+                позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+              </p>
+            </article>
+            <article class="how__article--block how__content" data-target="four">
+              <h3 class="how__h3 h3">
+                Инспектируем все этапы работ
+              </h3>
+              <p class="how__descr descr">
+                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития.
+                Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит
+                о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+                информационно-пропагандистское обеспечение нашей деятельности позволяет.
+              </p>
+            </article>
             <div class="how__article--button flex">
               <button class="how__btn how__btn--left btn btn--reset">
                 Подробнее
@@ -197,8 +248,11 @@
                 Договор
               </button>
             </div>
-          </article>
-          <img class="how__img" src="img/how-1.jpg" alt="фотография проводим консультацию">
+          </div>
+          <img class="how__img how__content how__content--active" src="img/how-1.jpg" alt="фотография проводим консультацию" data-target="one">
+          <img class="how__img how__content" src="img/how-2.jpg" alt="Привлекаем подрядчиков" data-target="two">
+          <img class="how__img how__content" src="img/how-3.jpg" alt="Составляем смету" data-target="three">
+          <img class="how__img how__content" src="img/how-4.jpg" alt="Инспектируем все этапы работ" data-target="four">
         </div>
       </div>
     </section>
@@ -381,6 +435,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
