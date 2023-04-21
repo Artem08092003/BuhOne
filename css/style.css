@@ -666,11 +666,17 @@ body {
   margin-bottom: 32px;
 }
 
+.faq__accordion--content {
+  flex-direction: column;
+}
+
 .faq__link {
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 30px 0;
   outline: none;
+  overflow: hidden;
   border-top: 1px solid var(--elipse-21-color, #CACACA);
   border-bottom: 1px solid var(--elipse-21-color, #CACACA);
   transition-property: border-top, border-bottom;
@@ -738,9 +744,15 @@ body {
   fill: var(--elipse-21-color, #CACACA);
 }
 
+.faq__accordion--trigger {
+  width: 100%;
+  justify-content: space-between;
+}
+
 .faq__h3 {
   margin-right: 20px;
   max-width: 1105px;
+  text-align: left;
   line-height: 33px;
   transition: color 0.3s ease-in-out;
 }
@@ -749,6 +761,11 @@ body {
   max-width: 50px;
   max-height: 50px;
   outline: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq__accordion--active .faq__svg {
+  transform: rotate(49deg);
 }
 
 .faq__svg svg {
@@ -763,6 +780,20 @@ body {
 .faq__svg svg path {
   fill: var(--elipse-18-color, #000);
   transition: fill 0.3s ease-in-out;
+}
+
+.faq__accordion--panel {
+  align-self: flex-start;
+  max-width: 1005px;
+}
+
+.faq__accordion--text {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
 }
 
 /* footer */
@@ -1702,9 +1733,19 @@ body {
     line-height: 24px;
   }
 
+  .faq__svg {
+    align-self: center;
+    max-height: 30px;
+  }
+
   .faq__svg svg {
     max-width: 30px;
     max-height: 30px;
+  }
+
+  .faq__accordion--text {
+    font-size: 14px;
+    line-height: 28px;
   }
 
   .footer {

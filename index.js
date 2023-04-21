@@ -41,3 +41,12 @@ document.querySelectorAll('.how__link').forEach(function (howTabsBtn) {
   });
 });
 
+
+//accordion faq
+
+new Accordion ('.faq__accordion--container', {
+  elementClass: 'faq__accordion--content',
+  triggerClass: 'faq__accordion--trigger',
+  panelClass: 'faq__accordion--panel',
+  activeClass: 'faq__accordion--active'
+});
