@@ -288,19 +288,10 @@ body {
   outline: none;
 }
 
-.header__form--block {
-  position: relative;
-  display: none;
-}
-
-.header__form--block--active {
-  display: block;
-}
-
 .header__form {
-  position: absolute;
-  top: -20px;
-  right: -15px;
+  position: fixed;
+  top: 1px;
+  right: 0px;
   z-index: 50;
   flex-wrap: nowrap;
   align-items: center;
@@ -349,42 +340,42 @@ body {
   height: 24px;
 }
 
-.header__form--close svg rect {
+.header__form .header__form--close svg rect {
   fill: var(--elipse-21-color);
   transition: fill 0.3s ease-in-out;
 }
 
-.header__form--close svg circle {
+.header__form .header__form--close svg circle {
   stroke: var(--elipse-21-color);
   transition: stroke 0.3s ease-in-out;
 }
 
-.header__form--close:focus {
+.header__form .header__form--close:focus {
   outline-offset: 4px;
   outline: 2px solid var(--elipse-12-color);
 }
 
-.header__form--close:hover svg rect {
+.header__form .header__form--close:hover svg rect {
   fill: var(--elipse-12-color);
 }
 
-.header__form--close:hover svg circle {
+.header__form .header__form--close:hover svg circle {
   stroke: var(--elipse-12-color);
 }
 
-.header__form--close:hover {
+.header__form .header__form--close:hover {
   outline: none;
 }
 
-.header__form--close:active svg rect {
+.header__form .header__form--close:active svg rect {
   fill: var(--elipse-18-color);
 }
 
-.header__form--close:active svg circle {
+.header__form .header__form--close:active svg circle {
   stroke: var(--elipse-18-color);
 }
 
-.header__form--close:active {
+.header__form .header__form--close:active {
   outline: none;
 }
 

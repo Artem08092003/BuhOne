@@ -87,17 +87,14 @@ menuLinks.forEach(function (el) {
 let searchForm = document.querySelector('.header__form'),
     searchBtnOpen = document.querySelector('.header__search--btn'),
     searchBtn = document.querySelector('.header__form--btn'),
-    searchBtnClose = document.querySelector('.header__form--close'),
-    searchBlock = document.querySelector('.header__form--block');
+    searchBtnClose = document.querySelector('.header__form--close');
 
 searchBtnOpen.addEventListener('click', function (el) {
   searchForm.classList.add('header__form--active');
   searchBtnOpen.classList.add('header__form--close')
-  searchBlock.classList.add('header__form--block--active')
 });
 
 searchBtnClose.addEventListener('click', function () {
   searchForm.classList.remove('header__form--active');
   searchBtnOpen.classList.remove('header__form--close')
-  searchBlock.classList.remove('header__form--block--active')
 });
