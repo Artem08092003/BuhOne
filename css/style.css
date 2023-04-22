@@ -326,6 +326,7 @@ body {
   border: none;
   outline: none;
   width: 412px;
+  border-radius: 0;
   border-bottom: 1px solid var(--elipse-21-color);
   cursor: pointer;
   font-weight: 500;
