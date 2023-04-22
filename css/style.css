@@ -761,7 +761,7 @@ body {
   max-width: 50px;
   max-height: 50px;
   outline: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .faq__accordion--active .faq__svg {
@@ -1037,12 +1037,9 @@ body {
     padding: 26px 0;
   }
 
-  .header__nav {
-    display: none;
-  }
-
   .header__burger--btn {
     position: relative;
+    z-index: 20;
     display: block;
     width: 30px;
     height: 23px;
@@ -1068,6 +1065,73 @@ body {
 
   .header__burger--line:last-child {
     bottom: 0;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 420px;
+    height: 100vh;
+    border-radius: 0px 0px 32px 32px;
+    z-index: 10;
+    padding: 170px 50px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+
+  .header__nav--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__nav--list {
+    flex-direction: column;
+  }
+
+  .header__nav--item {
+    width: 100%;
+  }
+
+  .header__nav--item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .header__nav--link {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333;
+  }
+
+  .header__burger--line--active .header__burger--line:first-child {
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
+  .header__burger--line--active .header__burger--line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__burger--line--active .header__burger--line:last-child {
+    left: 0;
+    top: 50%;
+    bottom: auto;
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+
+  .header__stop--scroll {
+    overflow: hidden;
   }
 
   .header__logo {
@@ -1185,6 +1249,10 @@ body {
 @media (max-width: 1024px) {
   .header {
     padding: 11px 0;
+  }
+
+  .header__nav {
+    padding: 150px 50px;
   }
 
   .swiper {
@@ -1326,6 +1394,20 @@ body {
   .descr {
     font-size: 16px;
     line-height: 32px;
+  }
+
+  .header__nav {
+    width: 320px;
+    padding: 80px 15px;
+  }
+
+  .header__nav--item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .header__nav--link {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .swiper {
