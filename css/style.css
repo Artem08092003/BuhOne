@@ -1045,6 +1045,11 @@ body {
     height: 23px;
   }
 
+  .header__burger--btn:focus {
+    outline-offset: 5px;
+    outline: 2px solid var(--elipse-12-color);
+  }
+
   .header__burger--line {
     position: absolute;
     left: 50%;
@@ -1052,6 +1057,18 @@ body {
     width: 100%;
     height: 3px;
     background-color: var(--elipse-18-color);
+  }
+
+  .header__burger--btn:active .header__burger--line {
+    background-color: var(--elipse-15-color);
+  }
+
+  .header__burger--btn .header__burger--line {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .header__burger--btn:active {
+    outline: none;
   }
 
   .header__burger--line:first-child {
@@ -1113,7 +1130,7 @@ body {
 
   .header__burger--line--active .header__burger--line:first-child {
     left: 0;
-    top: 50%;
+    top: 49%;
     transform: rotate(45deg);
     transform-origin: center;
   }
@@ -1124,7 +1141,7 @@ body {
 
   .header__burger--line--active .header__burger--line:last-child {
     left: 0;
-    top: 50%;
+    top: 49%;
     bottom: auto;
     transform: rotate(-45deg);
     transform-origin: center;
