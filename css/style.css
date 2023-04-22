@@ -288,6 +288,105 @@ body {
   outline: none;
 }
 
+.header__form--block {
+  position: relative;
+  display: none;
+}
+
+.header__form--block--active {
+  display: block;
+}
+
+.header__form {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: 50;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 16px 32px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  background-color: var(--elipse-17-color);
+  visibility: hidden;
+  transform: translateY(-120px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__form--active {
+  visibility: visible;
+  transform: none;
+}
+
+.header__form--input {
+  margin: 0;
+  margin-right: 14px;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 412px;
+  border-bottom: 1px solid var(--elipse-21-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__form--input::placeholder {
+  color: var(--elipse-21-color);
+}
+
+.header__form--btn {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__form--close {
+  width: 24px;
+  height: 24px;
+}
+
+.header__form--close svg rect {
+  fill: var(--elipse-21-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__form--close svg circle {
+  stroke: var(--elipse-21-color);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.header__form--close:focus {
+  outline-offset: 4px;
+  outline: 2px solid var(--elipse-12-color);
+}
+
+.header__form--close:hover svg rect {
+  fill: var(--elipse-12-color);
+}
+
+.header__form--close:hover svg circle {
+  stroke: var(--elipse-12-color);
+}
+
+.header__form--close:hover {
+  outline: none;
+}
+
+.header__form--close:active svg rect {
+  fill: var(--elipse-18-color);
+}
+
+.header__form--close:active svg circle {
+  stroke: var(--elipse-18-color);
+}
+
+.header__form--close:active {
+  outline: none;
+}
+
 /*hero*/
 .hero {
   padding-top: 50px;
@@ -750,6 +849,7 @@ body {
 }
 
 .faq__h3 {
+  align-self: center;
   margin-right: 20px;
   max-width: 1105px;
   text-align: left;
@@ -1593,6 +1693,18 @@ body {
   .header__logo {
     width: 110px;
     height: 35px;
+  }
+
+  .header__form {
+    padding: 20px 15px;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  .header__form--input {
+    margin: 0;
+    width: 222px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .hero {

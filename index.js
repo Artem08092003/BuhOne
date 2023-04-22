@@ -35,7 +35,7 @@ document.querySelectorAll('.how__link').forEach(function (howTabsBtn) {
     });
 
     document.querySelectorAll(`[data-target="${path}"]`).forEach(function (howContentAdd) {
-    howContentAdd.classList.add('how__content--active');
+      howContentAdd.classList.add('how__content--active');
     });
 
   });
@@ -44,7 +44,7 @@ document.querySelectorAll('.how__link').forEach(function (howTabsBtn) {
 
 //accordion faq
 
-new Accordion ('.faq__accordion--container', {
+new Accordion('.faq__accordion--container', {
   elementClass: 'faq__accordion--content',
   triggerClass: 'faq__accordion--trigger',
   panelClass: 'faq__accordion--panel',
@@ -60,27 +60,44 @@ const menuLinks = menu.querySelectorAll('.header__nav--item .header__nav--link')
 
 burger.addEventListener('click',
 
-    function () {
+  function () {
 
-        burger.classList.toggle('header__burger--line--active');
+    burger.classList.toggle('header__burger--line--active');
 
-        menu.classList.toggle('header__nav--active');
+    menu.classList.toggle('header__nav--active');
 
-        document.body.classList.toggle('header__stop--scroll');
-    })
+    document.body.classList.toggle('header__stop--scroll');
+  })
 
 menuLinks.forEach(function (el) {
-    el.addEventListener('click', function () {
+  el.addEventListener('click', function () {
 
-        burger.classList.remove('header__burger--line--active');
+    burger.classList.remove('header__burger--line--active');
 
-        menu.classList.remove('header__nav--active');
+    menu.classList.remove('header__nav--active');
 
-        document.body.classList.remove('header__stop--scroll');
+    document.body.classList.remove('header__stop--scroll');
 
-    });
+  });
 });
 
 
 //Search button
 
+let searchForm = document.querySelector('.header__form'),
+    searchBtnOpen = document.querySelector('.header__search--btn'),
+    searchBtn = document.querySelector('.header__form--btn'),
+    searchBtnClose = document.querySelector('.header__form--close'),
+    searchBlock = document.querySelector('.header__form--block');
+
+searchBtnOpen.addEventListener('click', function (el) {
+  searchForm.classList.add('header__form--active');
+  searchBtnOpen.classList.add('header__form--close')
+  searchBlock.classList.add('header__form--block--active')
+});
+
+searchBtnClose.addEventListener('click', function () {
+  searchForm.classList.remove('header__form--active');
+  searchBtnOpen.classList.remove('header__form--close')
+  searchBlock.classList.remove('header__form--block--active')
+});
