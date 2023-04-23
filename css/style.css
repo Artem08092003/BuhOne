@@ -302,7 +302,7 @@ body {
   background-color: var(--elipse-17-color);
   visibility: hidden;
   transform: translateY(-120px);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .header__form--active {
