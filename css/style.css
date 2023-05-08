@@ -217,17 +217,19 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 100%;
   right: 0;
   bottom: -7px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--elipse-12-color, #FF9900);
   outline: none;
   opacity: 0;
-  transition: border 0.2s linear, opacity 0.2s linear;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
 }
 
 .header__nav--link:hover::after {
   outline: none;
-  border-bottom: 2px solid var(--elipse-12-color, #FF9900);
   opacity: 1;
 }
 
@@ -237,7 +239,7 @@ body {
 
 .header__nav--link:active::after {
   outline: none;
-  border-bottom: 2px solid var(--elipse-15-color, #E1670E);
+  background-color: var(--elipse-15-color, #E1670E);
   opacity: 1;
 }
 
@@ -1208,10 +1210,7 @@ body {
 
   .header__nav--list {
     flex-direction: column;
-  }
-
-  .header__nav--item {
-    width: 100%;
+    align-items: flex-start;
   }
 
   .header__nav--item:not(:last-child) {
