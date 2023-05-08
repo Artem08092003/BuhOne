@@ -148,6 +148,10 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
+}
+
 /*header*/
 .header {
   padding: 14px 0;
@@ -204,7 +208,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.header__nav--link:focus {
+.header__nav--link.focus-visible {
   outline-offset: 5px;
   outline: 2px solid var(--elipse-12-color, #FF9900);
 }
@@ -257,7 +261,7 @@ body {
   transition: stroke 0.3s ease-in-out;
 }
 
-.header__search--btn:focus {
+.header__search--btn.focus-visible {
   outline-offset: 4px;
   outline: 2px solid var(--elipse-12-color, #FF9900);
 }
@@ -350,7 +354,7 @@ body {
   transition: stroke 0.3s ease-in-out;
 }
 
-.header__form .header__form--close:focus {
+.header__form .header__form--close.focus-visible {
   outline-offset: 4px;
   outline: 2px solid var(--elipse-12-color);
 }
@@ -432,7 +436,7 @@ body {
   color: var(--elipse-17-color, #fff);
 }
 
-.hero__btn:focus {
+.hero__btn.focus-visible {
   background-color: var(--elipse-13-color, #FFB84D);
   border-color: var(--elipse-13-color, #FFB84D);
 }
@@ -558,7 +562,7 @@ body {
   color: var(--elipse-17-color);
 }
 
-.about__btn--left:focus {
+.about__btn--left.focus-visible {
   background-color: var(--elipse-12-color, #FF9900);
   border-color: var(--elipse-12-color, #FF9900);
 }
@@ -642,7 +646,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.how__link:focus {
+.how__link.focus-visible {
   outline-offset: 5px;
   outline: 2px solid var(--elipse-12-color, #FF9900);
 }
@@ -692,7 +696,7 @@ body {
   color: var(--elipse-17-color, #fff);
 }
 
-.how__btn--left:focus {
+.how__btn--left.focus-visible {
   background-color: var(--elipse-13-color, #FFB84D);
   border-color: var(--elipse-13-color, #FFB84D);
 }
@@ -712,7 +716,7 @@ body {
   font-weight: 400;
 }
 
-.how__btn--right:focus {
+.how__btn--right.focus-visible {
   background-color: var(--elipse-19-color, #666);
   border-color: var(--elipse-19-color, #666);
   color: var(--elipse-17-color, #FFF);
@@ -777,22 +781,22 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-.faq__link:focus {
+.faq__link.focus-visible {
   outline: none;
   border-color: var(--elipse-12-color, #FF9900);
 }
 
-.faq__link:focus .faq__h3 {
+.faq__link.focus-visible .faq__h3 {
   outline: none;
   color: var(--elipse-12-color, #FF9900);
 }
 
-.faq__link:focus .faq__svg svg path {
+.faq__link.focus-visible .faq__svg svg path {
   outline: none;
   fill: var(--elipse-17-color, #FFF);
 }
 
-.faq__link:focus .faq__svg svg ellipse {
+.faq__link.focus-visible .faq__svg svg ellipse {
   outline: none;
   fill: var(--elipse-12-color, #FF9900);
 }
@@ -927,7 +931,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.footer__nav--link:focus {
+.footer__nav--link.focus-visible {
   outline-offset: 5px;
   outline: 2px solid var(--elipse-12-color, #FF9900);
 }
@@ -952,7 +956,7 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
-.footer__social--link:focus {
+.footer__social--link.focus-visible {
   outline-offset: 5px;
   outline: 2px solid var(--elipse-12-color, #FF9900);
 }
@@ -1011,7 +1015,7 @@ body {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.footer__input:focus {
+.footer__input.focus-visible {
   outline: none;
   background-color: var(--elipse-19-color, #666);
   border-color: var(--elipse-19-color, #666);
@@ -1050,7 +1054,7 @@ body {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.footer__textarea:focus {
+.footer__textarea.focus-visible {
   outline: none;
   background-color: var(--elipse-19-color, #666);
   border-color: var(--elipse-19-color, #666);
@@ -1078,7 +1082,7 @@ body {
   color: var(--elipse-17-color, #FFF);
 }
 
-.footer__btn:focus {
+.footer__btn.focus-visible {
   outline: none;
   border-color: var(--elipse-13-color, #FFB84D);
   background-color: var(--elipse-13-color, #FFB84D);
@@ -1140,7 +1144,7 @@ body {
     height: 23px;
   }
 
-  .header__burger--btn:focus {
+  .header__burger--btn.focus-visible {
     outline-offset: 5px;
     outline: 2px solid var(--elipse-12-color);
   }
@@ -1813,7 +1817,7 @@ body {
     color: var(--elipse-12-color);
   }
 
-  .about__btn--left:focus {
+  .about__btn--left.focus-visible {
     color: var(--elipse-17-color);
   }
 
