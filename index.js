@@ -1,4 +1,4 @@
-// Баннер
+// Баннер--------------------------------------------------------------------------------------------
 
 let swiper = new Swiper('.swiper', {
   loop: true,
@@ -15,7 +15,7 @@ let swiper = new Swiper('.swiper', {
 })
 
 
-//how Табы
+//how Табы--------------------------------------------------------------------------------------------
 
 document.querySelectorAll('.how__link').forEach(function (howTabsBtn) {
 
@@ -42,7 +42,7 @@ document.querySelectorAll('.how__link').forEach(function (howTabsBtn) {
 });
 
 
-//accordion faq
+//accordion faq--------------------------------------------------------------------------------------------
 
 new Accordion('.faq__accordion--container', {
   elementClass: 'faq__accordion--content',
@@ -52,7 +52,7 @@ new Accordion('.faq__accordion--container', {
 });
 
 
-//burger menu
+//burger menu--------------------------------------------------------------------------------------------
 
 const burger = document.querySelector('.header__burger--btn');
 const menu = document.querySelector('.header__nav');
@@ -82,7 +82,7 @@ menuLinks.forEach(function (el) {
 });
 
 
-//Search button
+//Search button--------------------------------------------------------------------------------------------
 
 let searchForm = document.querySelector('.header__form'),
     searchBtnOpen = document.querySelector('.header__search--btn'),
@@ -98,3 +98,43 @@ searchBtnClose.addEventListener('click', function () {
   searchForm.classList.remove('header__form--active');
   searchBtnOpen.classList.remove('header__form--close')
 });
+
+
+// // Карта яндекса API---------------------------------------------------
+
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("myMap-1", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [46.353604, 48.057829],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 16
+    });
+
+    // Создание геообъекта с типом точка (метка).
+    var myPlacemark = new ymaps.Placemark([46.353604, 48.057829], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/location.svg',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42]
+    });
+
+    // удаление обьекты на карте
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('scrollZoom');
+
+    // Размещение геообъекта на карте.
+    myMap.geoObjects.add(myPlacemark);
+}
