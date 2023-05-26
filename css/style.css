@@ -436,7 +436,7 @@ main {
   font-weight: 800;
   font-size: 70px;
   line-height: 85px;
-  color: aqua;
+  color:brown;
 }
 
 .hero__descr {
@@ -447,7 +447,7 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: cadetblue;
+  color: aqua;
 }
 
 .hero__btn {
@@ -1371,11 +1371,11 @@ main {
   }
 
   .swiper-slide-1 {
-    background-position: top;
+    background-position: top right;
   }
 
   .swiper-slide-2 {
-    background-position: top;
+    background-position: top right;
   }
 
   .hero__content {
