@@ -2283,7 +2283,7 @@ main {
 @media (max-width: 1024px) {
 
   /* header-calc */
-  .header__address--calc {
+  .header__address--item--top--calc-display-none {
     display: none;
   }
 
@@ -2301,13 +2301,41 @@ main {
 }
 
 @media (max-width: 768px) {
+  .header__address--descr--calc {
+    font-size: 14px;
+  }
+}
   .swiper__calc {
     height: 700px;
   }
-}
+
 
 @media (max-width: 576px) {
+  .header__address--list--top--calc {
+    column-gap: 15px;
+  }
+
+  .header__address--link--calc {
+    column-gap: 5px;
+  }
+
+  .header__address--descr--calc {
+    font-weight: 500;
+    font-size: 11px;
+  }
+
   .swiper__calc {
     height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__address--list--top--calc {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .header__address--link--calc {
+    justify-content: space-between;
   }
 }
