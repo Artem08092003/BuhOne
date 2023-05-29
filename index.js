@@ -138,3 +138,6 @@ function init() {
     // Размещение геообъекта на карте.
     myMap.geoObjects.add(myPlacemark);
 }
+
+
+
