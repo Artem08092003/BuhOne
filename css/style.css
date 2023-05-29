@@ -2331,6 +2331,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
+  background-color: floralwhite;
   cursor: pointer;
 }
 
@@ -2381,12 +2382,14 @@ main {
 /* calculator-animation */
 .calculator__container--border label,
 .calculator__container--border .tooltip__descr,
-.calculator__container--border #calculator__result {
+.calculator__container--border #calculator__result,
+.calculator__container--border #calculator__result--banner {
   transition: color 0.3s ease-in-out;
 }
 
 .calculator__container--border:hover label,
-.calculator__container--border:hover #calculator__result {
+.calculator__container--border:hover #calculator__result,
+.calculator__container--border:hover #calculator__result--banner {
   color: var(--elipse-17-color)
 }
 
