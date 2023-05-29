@@ -89,18 +89,18 @@ const seasonBannerSelect = document.getElementById("calculator__season--banner")
 const resultBannerOutput = document.getElementById("calculator__result--banner");
 
 const locationBannerPrices = {
-  "Пл.Вокзальная, 13 (на билборде с размером 3*6 м)": 20000,
-  "Ул. Савушкина, 5 (на билборде с размером 3*6 м)": 15000,
-  "Ул. Н.Островского, 33 (на билборде с размером 3*6 м)": 10000,
-  "Ул. Максима Горького 39/4 (на билборде с размером 3*5 м)": 15000,
-  "Ул. Набережная 1 мая, 4 (на билборде с размером 3*6 м)": 25000,
-  "Ул. Боевая, 29 (на здании с размером 5*12 м)": 35000,
-  "Ул. Савушкина, Остановка Селенские Исады (на остановки с размером 3*1.5 м)": 4000,
+  "ул. Академика Королева, 51 (на билборде с размером 3*6 м)": 9000,
+  "Ул. Яблочкова, 2д (на билборде с размером 3*6 м)": 7000,
+  "ул. Жилая, 16 (на билборде с размером 3*6 м)": 6000,
+  "ул. Латышева, 7Д (на билборде с размером 3*5 м)": 5000,
+  "ул. Бакинская, 121 (на билборде с размером 6*12 м)": 12000,
+  "ул. Адмиралтейская_Свердлова, 18 (на здании с размером 5*10 м)": 10000,
+  "Ул. Адмиралтейская, Остановка Сквер Ульяновых (на остановки с размером 3*1.5 м)": 3000,
 };
 
 function calculateBannerCost(event) {
   event.preventDefault();
-  const locationBannerPrice = locationPrices[locationBannerSelect.value];
+  const locationBannerPrice = locationBannerPrices[locationBannerSelect.value];
   const quantityBanner = parseInt(quantityBannerInput.value);
   const seasonBanner = seasonBannerSelect.value;
   const lightingBanner = document.getElementById("calculator__lighting--banner").checked;
@@ -141,7 +141,7 @@ function calculateBannerCost(event) {
     costBanner += costBanner * 0.04;
   }
 
-  resultBannerOutput.textContent = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для видео рекламы: ${costBanner} рублей`;
+  resultBannerOutput.textContent = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для баннерной рекламы: ${costBanner} рублей`;
 }
 
 document.querySelector("#calculator__form--banner").addEventListener("submit", calculateBannerCost);
