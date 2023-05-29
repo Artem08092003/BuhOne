@@ -145,7 +145,7 @@
               </select>
             </div>
             <div class="calculator__form--group">
-              <label for="calculator__quantity">количество рекламы в одном баннере:</label>
+              <label for="calculator__quantity">Количество рекламы в одном баннере:</label>
               <input type="number" id="calculator__quantity" name="Количество" min="1" max="20"
                 placeholder="введите количество" required>
             </div>
@@ -166,9 +166,13 @@
                 <option value="Декабрь">Декабрь</option>
               </select>
             </div>
-            <div class="calculator__form--checked">
+            <div class="calculator__form--checked calculator__form--checked--top">
               <label for="calculator__lighting">Дополнительные освещение:</label>
               <input type="checkbox" name="Освещение" id="calculator__lighting">
+            </div>
+            <div class="calculator__form--checked calculator__form--checked--bottom">
+              <label for="calculator__insurance">Добавить страховку:</label>
+              <input type="checkbox" name="Страховка" id="calculator__insurance">
             </div>
             <button class="btn--reset btn calculator__button hvr-grow" type="submit">Рассчитать стоимость</button>
           </form>
@@ -220,8 +224,8 @@
               </select>
             </div>
             <div class="calculator__form--group">
-              <label for="calculator__quantity--banner">количество рекламы в одном баннере:</label>
-              <input type="number" id="calculator__quantity--banner" name="Количество" min="1" max="20"
+              <label for="calculator__quantity--banner">Двухстронняя(2) или Одностронняя(1) установка на одном баннере (максимальное значение: 2):</label>
+              <input type="number" id="calculator__quantity--banner" name="Количество" min="1" max="2"
                 placeholder="введите количество" required>
             </div>
             <div class="calculator__form--group">
@@ -241,9 +245,13 @@
                 <option value="Декабрь">Декабрь</option>
               </select>
             </div>
-            <div class="calculator__form--checked">
+            <div class="calculator__form--checked calculator__form--checked--top">
               <label for="calculator__lighting--banner">Дополнительные освещение:</label>
               <input type="checkbox" name="Освещение" id="calculator__lighting--banner">
+            </div>
+            <div class="calculator__form--checked calculator__form--checked--bottom">
+              <label for="calculator__insurance--banner">Добавить страховку:</label>
+              <input type="checkbox" name="Страховка" id="calculator__insurance--banner">
             </div>
             <button class="btn--reset btn calculator__button hvr-grow" type="submit">Рассчитать стоимость</button>
           </form>
@@ -264,7 +272,7 @@
                             </svg>
                         </div>
                         <div class="tooltip__popup">
-                          Важно! Колличество показов в день составляет 50 раз и до 15 секунд в одном кадре. А также стоимость входит на производство, доставку, монтаж рекламных конструкций,
+                          Важно! Стоимость входит на производство, доставку, монтаж рекламных конструкций,
                           разрешительные документы и обслуживание
                         </div>
                     </div>
