@@ -222,6 +222,10 @@ main {
   margin-right: 85px;
 }
 
+.header__nav--item--reviews {
+  display: none;
+}
+
 .header__nav--link {
   position: relative;
   font-weight: 600;
@@ -1484,6 +1488,10 @@ main {
 
   .header__nav {
     padding: 150px 50px;
+  }
+
+  .header__nav--item--reviews {
+    display: block;
   }
 
   .swiper {
