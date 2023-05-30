@@ -60,9 +60,9 @@ function calculateCost(event) {
   } else if (season === "Сентябрь") {
     cost += cost * 0.4;
   } else if (season === "Октябрь") {
-    cost += cost * 0.3;
-  } else if (season === "Ноябрь") {
     cost += cost * 0.2;
+  } else if (season === "Ноябрь") {
+    cost += cost * 0.1;
   } else if (season === "Декабрь") {
     cost += cost * 0.4;
   }
@@ -126,9 +126,9 @@ function calculateBannerCost(event) {
   } else if (seasonBanner === "Сентябрь") {
     costBanner += costBanner * 0.4;
   } else if (seasonBanner === "Октябрь") {
-    costBanner += costBanner * 0.3;
-  } else if (seasonBanner === "Ноябрь") {
     costBanner += costBanner * 0.2;
+  } else if (seasonBanner === "Ноябрь") {
+    costBanner += costBanner * 0.1;
   } else if (seasonBanner === "Декабрь") {
     costBanner += costBanner * 0.4;
   }
@@ -145,3 +145,24 @@ function calculateBannerCost(event) {
 }
 
 document.querySelector("#calculator__form--banner").addEventListener("submit", calculateBannerCost);
+
+
+
+// Отправка данные клиента в раздел Оставить заявку-------------------------------------------------------------------------------------------------------------------------------------------
+// const form = document.querySelector('.footer__form');
+// const nameInput = document.querySelector('.footer__input--1');
+// const emailInput = document.querySelector('.footer__input--2');
+// const commentInput = document.querySelector('.footer__textarea');
+
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();
+
+//   const formData = new FormData();
+//   formData.append('name', nameInput.value);
+//   formData.append('email', emailInput.value);
+//   formData.append('comment', commentInput.value);
+
+//   const xhr = new XMLHttpRequest();
+//   xhr.open('POST', 'send_form.php');
+//   xhr.send(formData);
+// });

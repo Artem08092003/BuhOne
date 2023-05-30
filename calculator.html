@@ -17,7 +17,7 @@
   <header class="header">
     <div class="header__container header__container--calc container flex">
       <a class="header__logo flex" href="index.html" title="перейти к главному страницу сайта">
-        <img class="header__img" src="img/Logo-header-svg.svg" alt="логотип компании Бухван">
+        <img class="header__img" src="img/logo-header-svg.svg" alt="логотип компании Бухван">
         <span>BuhOne</span>
       </a>
       <address class="header__address--calc">
@@ -54,7 +54,7 @@
             </p>
           </li>
           <li class="header__address--item--top--calc">
-            <a href="mailto:BuhOne@mail.ru" class="header__address--link--calc flex">
+            <a href="mailto:buhone@list.ru" class="header__address--link--calc flex">
               <span class="header__address--item--svg--calc">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
                   <path
@@ -66,7 +66,7 @@
                 </svg>
               </span>
               <p class="descr header__address--descr--calc">
-                BuhOne@mail.ru
+                BuhOne@list.ru
               </p>
             </a>
           </li>
@@ -145,9 +145,9 @@
               </select>
             </div>
             <div class="calculator__form--group">
-              <label for="calculator__quantity">Количество рекламы в одном баннере:</label>
+              <label for="calculator__quantity">Количество типов рекламы в одном баннере:</label>
               <input type="number" id="calculator__quantity" name="Количество" min="1" max="20"
-                placeholder="введите количество" required>
+                placeholder="введите количество*" required>
             </div>
             <div class="calculator__form--group">
               <label for="calculator__season">Сезонность:</label>
@@ -193,7 +193,7 @@
                             </svg>
                         </div>
                         <div class="tooltip__popup">
-                          Важно! Колличество показов в день составляет 1000 раз и до 15 секунд в одном кадре. А также стоимость входит на производство, доставку, монтаж рекламных конструкций,
+                          Важно! Колличество в одном типов показов в день составляет 1000 раз и до 15 секунд в одном кадре. А также стоимость входит на производство, доставку, монтаж рекламных конструкций,
                           разрешительные документы и обслуживание
                         </div>
                     </div>
@@ -226,7 +226,7 @@
             <div class="calculator__form--group">
               <label for="calculator__quantity--banner">Двухстронняя(2) или Одностронняя(1) установка на одном баннере:</label>
               <input type="number" id="calculator__quantity--banner" name="Количество" min="1" max="2"
-                placeholder="введите значение не более 2" required>
+                placeholder="введите значение не более 2*" required>
             </div>
             <div class="calculator__form--group">
               <label for="calculator__season--banner">Сезонность:</label>
@@ -351,13 +351,12 @@
           <h2 class="footer__h2 h2" tabindex="0">
             Оставить заявку
           </h2>
-          <form class="footer__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post"
-            aria-label="введите ваше информацию">
+          <form class="footer__form flex" method="post" action="send_form.php" aria-label="введите ваше информацию">
             <input class="footer__input footer__input--1" name="name" placeholder="Фамилия, имя и отчество*" type="text"
               required>
             <input class="footer__input footer__input--2" name="email" placeholder="Email*" type="email" required>
             <textarea class="footer__textarea" name="comment" placeholder="Сообщение"></textarea>
-            <button class="footer__btn hvr-grow btn btn--reset">
+            <button class="footer__btn hvr-grow btn btn--reset" type="submit">
               Отправить данные
             </button>
           </form>
