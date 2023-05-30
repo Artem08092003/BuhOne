@@ -2635,18 +2635,18 @@ main {
   }
 
   .calculator__container--border {
-    padding: 15px 25px;
+    padding: 15px 20px;
   }
 
   .calculator__h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
   }
 
   .calculator__form--group label,
   .calculator__form--checked label {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
   }
 
@@ -2692,7 +2692,9 @@ main {
 
   #calculator__result,
   #calculator__result--banner {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
   }
 }
 
