@@ -1,40 +1,29 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+<?
+//print_r($_POST);
 
-require 'vendor/autoload.php';
+mail('buhone@list.ru', 'Заявки от клиента', "ФИО: ".$_POST['name']."\r\n". "Почта: ".$_POST['email']."\r\n".
+     "Сообщение: ".$_POST['comment']);
 
-// Retrieve form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$comment = $_POST['comment'];
-
-// Create a new PHPMailer instance
-$mail = new PHPMailer(true);
-
-try {
-    // Server settings
-    $mail->SMTPDebug = 0;
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'your_email@gmail.com';
-    $mail->Password = 'your_email_password';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-
-    // Recipients
-    $mail->setFrom($email, $name);
-    $mail->addAddress('recipient_email@example.com');
-
-    // Content
-    $mail->isHTML(true);
-    $mail->Subject = 'New form submission';
-    $mail->Body    = "Name: $name<br>Email: $email<br>Comment: $comment";
-
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}
 ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="refresh" content="3; url=index.html">
+    <title>Спасибо! Мы свяжемся с вами!</title>
+    <meta name="generator">
+    <script type="text/javascript">
+        setTimeout('location.replace("/index.html")', 4000);
+/*Изменить текущий адрес страницы через 3 секунды (4000 миллисекунд)*/
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Спасибо! Мы свяжемся с вами в ближайшее время!</h1>
+</body>
+
+</html>

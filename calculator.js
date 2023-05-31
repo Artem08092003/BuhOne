@@ -145,24 +145,3 @@ function calculateBannerCost(event) {
 }
 
 document.querySelector("#calculator__form--banner").addEventListener("submit", calculateBannerCost);
-
-
-
-// Отправка данные клиента в раздел Оставить заявку-------------------------------------------------------------------------------------------------------------------------------------------
-// const form = document.querySelector('.footer__form');
-// const nameInput = document.querySelector('.footer__input--1');
-// const emailInput = document.querySelector('.footer__input--2');
-// const commentInput = document.querySelector('.footer__textarea');
-
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-//   const formData = new FormData();
-//   formData.append('name', nameInput.value);
-//   formData.append('email', emailInput.value);
-//   formData.append('comment', commentInput.value);
-
-//   const xhr = new XMLHttpRequest();
-//   xhr.open('POST', 'send_form.php');
-//   xhr.send(formData);
-// });
