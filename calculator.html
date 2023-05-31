@@ -134,7 +134,7 @@
           <form id="calculator__form">
             <div class="calculator__form--group">
               <label for="calculator__location">Местоположение:</label>
-              <select id="calculator__location" name="Местоположение">
+              <select id="calculator__location" name="location">
                 <option value="Пл.Вокзальная, 13 (на билборде с размером 3*6 м)">Пл.Вокзальная, 13 на билборде с размером 3*6 м (от 20000 рублей в месяц)</option>
                 <option value="Ул. Савушкина, 5 (на билборде с размером 3*6 м)">Ул. Савушкина, 5 на билборде с размером 3*6 м (от 15000 рублей в месяц)</option>
                 <option value="Ул. Н.Островского, 33 (на билборде с размером 3*6 м)">Ул. Н.Островского, 33 на билборде с размером 3*6 м (от 10000 рублей в месяц)</option>
@@ -201,6 +201,7 @@
             </div>
             </div>
             <p id="calculator__result"></p>
+            <button id="calculator__btn--book" class="btn--reset btn hvr-grow" onclick="window.location.href='#application'"></button>
           </div>
         </div>
       </div>
@@ -213,7 +214,7 @@
           <form id="calculator__form--banner">
             <div class="calculator__form--group">
               <label for="calculator__location--banner">Местоположение:</label>
-              <select id="calculator__location--banner" name="Местоположение">
+              <select id="calculator__location--banner" name="location">
                 <option value="ул. Академика Королева, 51 (на билборде с размером 3*6 м)">ул. Академика Королева, 51 на билборде с размером 3*6 м (от 9000 рублей в месяц)</option>
                 <option value="Ул. Яблочкова, 2д (на билборде с размером 3*6 м)">Ул. Яблочкова, 2д "Лента" на билборде с размером 3*6 м (от 7000 рублей в месяц)</option>
                 <option value="ул. Жилая, 16 (на билборде с размером 3*6 м)">ул. Жилая, 16 на билборде с размером 3*6 м (от 6000 рублей в месяц)</option>
@@ -280,6 +281,7 @@
             </div>
             </div>
             <p id="calculator__result--banner"></p>
+            <button id="calculator__btn--book--banner" class="btn--reset btn hvr-grow" onclick="window.location.href='#application'"></button>
           </div>
         </div>
       </div>
@@ -348,14 +350,16 @@
       </div>
       <div class="footer__content--right flex">
         <div class="footer__center">
-          <h2 class="footer__h2 h2" tabindex="0">
-            Оставить заявку
+          <h2 id="application" class="footer__h2 h2" tabindex="0">
+            Забронировать
           </h2>
           <form class="footer__form flex" method="post" action="send_form.php" aria-label="введите ваше информацию">
             <input class="footer__input footer__input--1" name="name" placeholder="Фамилия, имя и отчество*" type="text"
               required>
             <input class="footer__input footer__input--2" name="email" placeholder="Email*" type="email" required>
             <textarea class="footer__textarea" name="comment" placeholder="Сообщение"></textarea>
+            <input type="hidden" name="calculator-result" id="calculator__result--input">
+            <input type="hidden" name="calculator-result-banner" id="calculator__result--input--banner">
             <button class="footer__btn hvr-grow btn btn--reset" type="submit">
               Отправить данные
             </button>

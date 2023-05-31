@@ -1,9 +1,12 @@
 <?
 //print_r($_POST);
 
-mail('buhone@list.ru', 'Заявки от клиента', "ФИО: ".$_POST['name']."\r\n". "Почта: ".$_POST['email']."\r\n".
-     "Сообщение: ".$_POST['comment']);
-
+mail('buhone@list.ru', 'Заявку от клиента',
+     "ФИО: ".$_POST['name']."\r\n".
+     "Почта: ".$_POST['email']."\r\n".
+     "Сообщение: ".$_POST['comment']. "\r\n".
+     "Клиент хочет забронировать видео рекламы:  ".$_POST['calculator-result']. "\r\n".
+     "Клиент хочет забронировать баннерной рекламы:  ".$_POST['calculator-result-banner']);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>

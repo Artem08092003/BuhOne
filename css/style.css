@@ -2435,21 +2435,29 @@ main {
   border: 2px solid var(--elipse-17-color);
 }
 
-.calculator__container--border .calculator__button {
+.calculator__container--border .calculator__button,
+.calculator__container--border #calculator__btn--book,
+.calculator__container--border #calculator__btn--book--banner{
   background-color: var(--elipse-12-color);
   color: var(--elipse-17-color);
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.calculator__container--border .calculator__button:focus {
+.calculator__container--border .calculator__button:focus,
+.calculator__container--border #calculator__btn--book:focus,
+.calculator__container--border #calculator__btn--book--banner:focus {
   transform: none;
 }
 
-.calculator__container--border .calculator__button:active {
+.calculator__container--border .calculator__button:active,
+.calculator__container--border #calculator__btn--book:active,
+.calculator__container--border #calculator__btn--book--banner:active {
   transform: perspective(1px) translateZ(0px);
 }
 
-.calculator__container--border:hover .calculator__button {
+.calculator__container--border:hover .calculator__button,
+.calculator__container--border:hover #calculator__btn--book,
+.calculator__container--border:hover #calculator__btn--book--banner {
   background-color: #f1b620;
 }
 
@@ -2555,6 +2563,15 @@ main {
 
 .tooltip__market:hover svg path {
   fill: #CCB26E;
+}
+
+#calculator__btn--book,
+#calculator__btn--book--banner {
+  margin-left: 10px;
+  border: none;
+  border-radius: 15px;
+  line-height: 300%;
+  padding: 0 10px;
 }
 
 @media (max-width: 1024px) {

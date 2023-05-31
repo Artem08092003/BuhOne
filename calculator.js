@@ -21,6 +21,7 @@ const locationSelect = document.getElementById("calculator__location");
 const quantityInput = document.getElementById("calculator__quantity");
 const seasonSelect = document.getElementById("calculator__season");
 const resultOutput = document.getElementById("calculator__result");
+const btnBook = document.getElementById("calculator__btn--book");
 
 const locationPrices = {
   "Пл.Вокзальная, 13 (на билборде с размером 3*6 м)": 20000,
@@ -76,6 +77,14 @@ function calculateCost(event) {
   }
 
   resultOutput.textContent = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей`;
+
+  document.querySelector('#calculator__result--input').value = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей.
+  Двухстронняя(2) или Одностронняя(1) установка на одном баннере: ${quantityInput.value}.
+  Сезонность: ${seasonSelect.value}.
+  Дополнительные освещение: ${lighting}.
+  Страховка: ${insurance}`;
+
+  btnBook.textContent = `Забронировать`
 }
 
 document.querySelector("#calculator__form").addEventListener("submit", calculateCost);
@@ -87,6 +96,7 @@ const locationBannerSelect = document.getElementById("calculator__location--bann
 const quantityBannerInput = document.getElementById("calculator__quantity--banner");
 const seasonBannerSelect = document.getElementById("calculator__season--banner");
 const resultBannerOutput = document.getElementById("calculator__result--banner");
+const btnBannerBook = document.getElementById("calculator__btn--book--banner");
 
 const locationBannerPrices = {
   "ул. Академика Королева, 51 (на билборде с размером 3*6 м)": 9000,
@@ -142,6 +152,14 @@ function calculateBannerCost(event) {
   }
 
   resultBannerOutput.textContent = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для баннерной рекламы: ${costBanner} рублей`;
+
+  document.querySelector('#calculator__result--input--banner').value = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для баннерной рекламы: ${costBanner} рублей.
+  Двухстронняя(2) или Одностронняя(1) установка на одном баннере: ${quantityBannerInput.value}.
+  Сезонность: ${seasonBannerSelect.value}.
+  Дополнительные освещение: ${lightingBanner}.
+  Страховка: ${insuranceBanner}`;
+
+  btnBannerBook.textContent = `Забронировать`
 }
 
 document.querySelector("#calculator__form--banner").addEventListener("submit", calculateBannerCost);
