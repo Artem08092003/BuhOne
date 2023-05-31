@@ -3,6 +3,7 @@
 
 mail('buhone@list.ru', 'Заявку от клиента',
      "ФИО: ".$_POST['name']."\r\n".
+     "Телефон: ".$_POST['tel']."\r\n".
      "Почта: ".$_POST['email']."\r\n".
      "Сообщение: ".$_POST['comment']. "\r\n".
      "Клиент хочет забронировать видео рекламы:  ".$_POST['calculator-result']. "\r\n".

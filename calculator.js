@@ -79,7 +79,7 @@ function calculateCost(event) {
   resultOutput.textContent = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей`;
 
   document.querySelector('#calculator__result--input').value = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей.
-  Двухстронняя(2) или Одностронняя(1) установка на одном баннере: ${quantityInput.value}.
+  Количество типов рекламы в одном баннере: ${quantityInput.value}.
   Сезонность: ${seasonSelect.value}.
   Дополнительные освещение: ${lighting}.
   Страховка: ${insurance}`;

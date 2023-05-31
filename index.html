@@ -457,8 +457,8 @@
               </a>
             </li>
             <li class="footer__nav--item">
-              <a href="reviews.html" target="_blank"
-                class="footer__nav--link" title="переход на страницу яндекс карта в раздел отзывы">
+              <a href="reviews.html" target="_blank" class="footer__nav--link"
+                title="переход на страницу яндекс карта в раздел отзывы">
                 Отзывы
               </a>
             </li>
@@ -513,9 +513,10 @@
           <h2 class="footer__h2 h2" tabindex="0">
             Оставить заявку
           </h2>
-          <form class="footer__form flex"  method="post" action="send_form.php"
-            aria-label="введите ваше информацию">
+          <form class="footer__form flex" method="post" action="send_form.php" aria-label="введите ваше информацию">
             <input class="footer__input footer__input--1" name="name" placeholder="Фамилия, имя и отчество*" type="text"
+              required>
+            <input class="footer__input footer__input--3" name="tel" placeholder="Номер телефон*" type="tel"
               required>
             <input class="footer__input footer__input--2" name="email" placeholder="Email*" type="email" required>
             <textarea class="footer__textarea" name="comment" placeholder="Сообщение"></textarea>
