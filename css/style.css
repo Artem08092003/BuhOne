@@ -500,7 +500,7 @@ main {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color:rgba(0, 0, 0, 0.315);
+	background: linear-gradient(rgba(0, 0, 0, 0.207), rgba(0, 0, 0, 0.705));
 }
 
 .swiper-slide-1 {
