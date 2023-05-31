@@ -2437,7 +2437,7 @@ main {
 #calculator__quantity:focus,
 #calculator__season:focus,
 #calculator__location--banner:focus,
-#calculator__quantity--banne:focus,
+#calculator__quantity--banner:focus,
 #calculator__season--banner:focus {
   background-color: var(--elipse-21-color);
   border: 2px solid var(--elipse-17-color);
@@ -2465,12 +2465,14 @@ main {
 .calculator__container--border #calculator__btn--book:focus,
 .calculator__container--border #calculator__btn--book--banner:focus {
   transform: none;
+  outline: 2px solid var(--elipse-18-color);
 }
 
 .calculator__container--border .calculator__button:active,
 .calculator__container--border #calculator__btn--book:active,
 .calculator__container--border #calculator__btn--book--banner:active {
   transform: perspective(1px) translateZ(0px);
+  outline: none;
 }
 
 .calculator__container--border:hover .calculator__button,
