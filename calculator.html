@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/hover-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -110,8 +110,7 @@
                 <button class="hero__btn hvr-grow btn btn--reset" onclick="window.location.href='#calculator'">
                   баннерная видеореклама
                 </button>
-                <button class="hero__btn hvr-grow btn btn--reset"
-                  onclick="window.location.href='#calculator__banner'">
+                <button class="hero__btn hvr-grow btn btn--reset" onclick="window.location.href='#calculator__banner'">
                   баннерная реклама
                 </button>
               </div>
@@ -129,19 +128,27 @@
 
     <section id="calculator" class="calculator">
       <div class="calculator__container container">
-        <h2 class="h2 calculator__h2" tabindex="0">Рассчитать стоимость установки наружной рекламы (для видео рекламы)</h2>
+        <h2 class="h2 calculator__h2" tabindex="0">Рассчитать стоимость установки наружной рекламы (для видео рекламы)
+        </h2>
         <div class="calculator__container--border">
           <form id="calculator__form">
             <div class="calculator__form--group">
               <label for="calculator__location">Местоположение:</label>
-              <select id="calculator__location" name="location">
-                <option value="Пл.Вокзальная, 13 (на билборде с размером 3*6 м)">Пл.Вокзальная, 13 на билборде с размером 3*6 м (от 20000 рублей в месяц)</option>
-                <option value="Ул. Савушкина, 5 (на билборде с размером 3*6 м)">Ул. Савушкина, 5 на билборде с размером 3*6 м (от 15000 рублей в месяц)</option>
-                <option value="Ул. Н.Островского, 33 (на билборде с размером 3*6 м)">Ул. Н.Островского, 33 на билборде с размером 3*6 м (от 10000 рублей в месяц)</option>
-                <option value="Ул. Максима Горького 39/4 (на билборде с размером 3*5 м)">Ул. Максима Горького 39/4 на билборде с размером 3*5 м (от 15000 рублей в месяц)</option>
-                <option value="Ул. Набережная 1 мая, 4 (на билборде с размером 3*6 м)">Ул. Набережная 1 мая, 4 на билборде с размером 3*6 м (от 25000 рублей в месяц)</option>
-                <option value="Ул. Боевая, 29 (на здании с размером 5*12 м)">Ул. Боевая, 29 на здании с размером 6*12 м (от 35000 рублей в месяц)</option>
-                <option value="Ул. Савушкина, Остановка Селенские Исады (на остановки с размером 3*1.5 м)">Ул. Савушкина, Остановка Селенские Исады на остановки с размером 3*1.5 м (от 4000 рублей в месяц)</option>
+              <select id="calculator__location" name="location" required>
+                <option value="Пл.Вокзальная, 13 (на билборде с размером 3*6 м)">Пл.Вокзальная, 13 на билборде с
+                  размером 3*6 м (от 20000 рублей в месяц)</option>
+                <option value="Ул. Савушкина, 5 (на билборде с размером 3*6 м)">Ул. Савушкина, 5 на билборде с размером
+                  3*6 м (от 15000 рублей в месяц)</option>
+                <option value="Ул. Н.Островского, 33 (на билборде с размером 3*6 м)">Ул. Н.Островского, 33 на билборде с
+                  размером 3*6 м (от 10000 рублей в месяц)</option>
+                <option value="Ул. Максима Горького 39/4 (на билборде с размером 3*5 м)">Ул. Максима Горького 39/4 на
+                  билборде с размером 3*5 м (от 15000 рублей в месяц)</option>
+                <option value="Ул. Набережная 1 мая, 4 (на билборде с размером 3*6 м)">Ул. Набережная 1 мая, 4 на
+                  билборде с размером 3*6 м (от 25000 рублей в месяц)</option>
+                <option value="Ул. Боевая, 29 (на здании с размером 5*12 м)">Ул. Боевая, 29 на здании с размером 6*12 м
+                  (от 35000 рублей в месяц)</option>
+                <option value="Ул. Савушкина, Остановка Селенские Исады (на остановки с размером 3*1.5 м)">Ул.
+                  Савушкина, Остановка Селенские Исады на остановки с размером 3*1.5 м (от 4000 рублей в месяц)</option>
               </select>
             </div>
             <div class="calculator__form--group">
@@ -180,28 +187,32 @@
             <div class="calculator__descr--result">
               <div class="tooltip__container">
                 <div class="tooltip__content">
-                    <p class="tooltip__descr" tabindex="0">
-                      Результат:
-                    </p>
-                    <div class="tooltip">
-                        <div class="tooltip__market" tabindex="0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
-                                    fill="none" />
-                            </svg>
-                        </div>
-                        <div class="tooltip__popup" tabindex="0">
-                          Важно! Колличество в одном типов показов в день составляет 1000 раз и до 15 секунд в одном кадре. А также стоимость входит на производство, доставку, монтаж рекламных конструкций,
-                          разрешительные документы и обслуживание
-                        </div>
+                  <p class="tooltip__descr" tabindex="0">
+                    Результат:
+                  </p>
+                  <div class="tooltip">
+                    <div class="tooltip__market" tabindex="0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                          fill="none" />
+                      </svg>
                     </div>
+                    <div class="tooltip__popup" tabindex="0">
+                      Важно! Колличество в одном типов показов в день составляет 1000 раз и до 15 секунд в одном кадре.
+                      А также стоимость входит на производство, доставку, монтаж рекламных конструкций,
+                      разрешительные документы и обслуживание
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             </div>
             <p id="calculator__result" tabindex="0"></p>
-            <button id="calculator__btn--book" class="btn--reset btn hvr-grow" onclick="window.location.href='#application'"></button>
+            <div class="calculator__container--reset">
+              <button id="calculator__btn--book" class="btn--reset btn hvr-grow"
+                onclick="window.location.href='#application'"></button>
+              <button id="calculator__btn--reset" class="btn--reset btn hvr-grow"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -209,23 +220,33 @@
 
     <section id="calculator__banner" class="calculator">
       <div class="calculator__container container">
-        <h2 class="h2 calculator__h2" tabindex="0">Рассчитать стоимость установки наружной рекламы (для баннерной рекламы)</h2>
+        <h2 class="h2 calculator__h2" tabindex="0">Рассчитать стоимость установки наружной рекламы (для баннерной
+          рекламы)</h2>
         <div class="calculator__container--border">
           <form id="calculator__form--banner">
             <div class="calculator__form--group">
               <label for="calculator__location--banner">Местоположение:</label>
-              <select id="calculator__location--banner" name="location">
-                <option value="ул. Академика Королева, 51 (на билборде с размером 3*6 м)">ул. Академика Королева, 51 на билборде с размером 3*6 м (от 9000 рублей в месяц)</option>
-                <option value="Ул. Яблочкова, 2д (на билборде с размером 3*6 м)">Ул. Яблочкова, 2д "Лента" на билборде с размером 3*6 м (от 7000 рублей в месяц)</option>
-                <option value="ул. Жилая, 16 (на билборде с размером 3*6 м)">ул. Жилая, 16 на билборде с размером 3*6 м (от 6000 рублей в месяц)</option>
-                <option value="ул. Латышева, 7Д (на билборде с размером 3*5 м)">ул. Латышева, 7Д на билборде с размером 3*5 м (от 5000 рублей в месяц)</option>
-                <option value="ул. Бакинская, 121 (на билборде с размером 6*12 м)">ул. Бакинская, 121 на билборде с размером 6*12 м (от 12000 рублей в месяц)</option>
-                <option value="ул. Адмиралтейская_Свердлова, 18 (на здании с размером 5*10 м)">ул. Адмиралтейская_Свердлова, 18 на здании с размером 5*10 м (от 10000 рублей в месяц)</option>
-                <option value="Ул. Адмиралтейская, Остановка Сквер Ульяновых (на остановки с размером 3*1.5 м)">Ул. Адмиралтейская, Остановка Сквер Ульяновых на остановки с размером 3*1.5 м (от 3000 рублей в месяц)</option>
+              <select id="calculator__location--banner" name="location" required>
+                <option value="ул. Академика Королева, 51 (на билборде с размером 3*6 м)">ул. Академика Королева, 51 на
+                  билборде с размером 3*6 м (от 9000 рублей в месяц)</option>
+                <option value="Ул. Яблочкова, 2д (на билборде с размером 3*6 м)">Ул. Яблочкова, 2д "Лента" на билборде с
+                  размером 3*6 м (от 7000 рублей в месяц)</option>
+                <option value="ул. Жилая, 16 (на билборде с размером 3*6 м)">ул. Жилая, 16 на билборде с размером 3*6 м
+                  (от 6000 рублей в месяц)</option>
+                <option value="ул. Латышева, 7Д (на билборде с размером 3*5 м)">ул. Латышева, 7Д на билборде с размером
+                  3*5 м (от 5000 рублей в месяц)</option>
+                <option value="ул. Бакинская, 121 (на билборде с размером 6*12 м)">ул. Бакинская, 121 на билборде с
+                  размером 6*12 м (от 12000 рублей в месяц)</option>
+                <option value="ул. Адмиралтейская_Свердлова, 18 (на здании с размером 5*10 м)">ул.
+                  Адмиралтейская_Свердлова, 18 на здании с размером 5*10 м (от 10000 рублей в месяц)</option>
+                <option value="Ул. Адмиралтейская, Остановка Сквер Ульяновых (на остановки с размером 3*1.5 м)">Ул.
+                  Адмиралтейская, Остановка Сквер Ульяновых на остановки с размером 3*1.5 м (от 3000 рублей в месяц)
+                </option>
               </select>
             </div>
             <div class="calculator__form--group">
-              <label for="calculator__quantity--banner">Двухстронняя(2) или Одностронняя(1) установка на одном баннере:</label>
+              <label for="calculator__quantity--banner">Двухстронняя(2) или Одностронняя(1) установка на одном
+                баннере:</label>
               <input type="number" id="calculator__quantity--banner" name="Количество" min="1" max="2"
                 placeholder="введите значение не более 2*" required>
             </div>
@@ -260,28 +281,31 @@
             <div class="calculator__descr--result">
               <div class="tooltip__container">
                 <div class="tooltip__content">
-                    <p class="tooltip__descr" tabindex="0">
-                      Результат:
-                    </p>
-                    <div class="tooltip">
-                        <div class="tooltip__market" tabindex="0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
-                                    fill="none" />
-                            </svg>
-                        </div>
-                        <div class="tooltip__popup" tabindex="0">
-                          Важно! Стоимость входит на производство, доставку, монтаж рекламных конструкций,
-                          разрешительные документы и обслуживание
-                        </div>
+                  <p class="tooltip__descr" tabindex="0">
+                    Результат:
+                  </p>
+                  <div class="tooltip">
+                    <div class="tooltip__market" tabindex="0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                          fill="none" />
+                      </svg>
                     </div>
+                    <div class="tooltip__popup" tabindex="0">
+                      Важно! Стоимость входит на производство, доставку, монтаж рекламных конструкций,
+                      разрешительные документы и обслуживание
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             </div>
             <p id="calculator__result--banner" tabindex="0"></p>
-            <button id="calculator__btn--book--banner" class="btn--reset btn hvr-grow" onclick="window.location.href='#application'"></button>
+            <div class="calculator__container--reset flex">
+              <button id="calculator__btn--book--banner" class="btn--reset btn hvr-grow"
+                onclick="window.location.href='#application'"></button>
+              <button id="calculator__btn--reset--banner" class="btn--reset btn hvr-grow"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -303,8 +327,8 @@
               </a>
             </li>
             <li class="footer__nav--item">
-              <a href="reviews.html" target="_blank"
-                class="footer__nav--link" title="переход на страницу яндекс карта в раздел отзывы">
+              <a href="reviews.html" target="_blank" class="footer__nav--link"
+                title="переход на страницу яндекс карта в раздел отзывы">
                 Отзывы
               </a>
             </li>
@@ -356,8 +380,7 @@
           <form class="footer__form flex" method="post" action="send_form.php" aria-label="введите ваше информацию">
             <input class="footer__input footer__input--1" name="name" placeholder="Фамилия, имя и отчество*" type="text"
               required>
-            <input class="footer__input footer__input--3" name="tel" placeholder="Номер телефон*" type="tel"
-              required>
+            <input class="footer__input footer__input--3" name="tel" placeholder="Номер телефон*" type="tel" required>
             <input class="footer__input footer__input--2" name="email" placeholder="Email*" type="email" required>
             <textarea class="footer__textarea" name="comment" placeholder="Сообщение"></textarea>
             <input type="hidden" name="calculator-result" id="calculator__result--input">
@@ -380,7 +403,7 @@
   </footer>
   <script src="libs/focus-visible.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script> -->
   <!-- <script src="index.js"></script> -->
   <script src="calculator.js"></script>
 </body>

@@ -19,7 +19,7 @@ mail('buhone@list.ru', 'Заявку от клиента',
     <meta name="generator">
     <script type="text/javascript">
         setTimeout('location.replace("/index.html")', 4000);
-/*Изменить текущий адрес страницы через 3 секунды (4000 миллисекунд)*/
+/*Изменить текущий адрес страницы через 4 секунды (4000 миллисекунд)*/
     </script>
     <style>
 

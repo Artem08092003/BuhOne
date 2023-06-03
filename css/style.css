@@ -2455,7 +2455,9 @@ main {
 
 .calculator__container--border .calculator__button,
 .calculator__container--border #calculator__btn--book,
-.calculator__container--border #calculator__btn--book--banner{
+.calculator__container--border #calculator__btn--book--banner,
+.calculator__container--border #calculator__btn--reset,
+.calculator__container--border #calculator__btn--reset--banner{
   background-color: var(--elipse-12-color);
   color: var(--elipse-17-color);
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -2463,21 +2465,27 @@ main {
 
 .calculator__container--border .calculator__button:focus,
 .calculator__container--border #calculator__btn--book:focus,
-.calculator__container--border #calculator__btn--book--banner:focus {
+.calculator__container--border #calculator__btn--book--banner:focus,
+.calculator__container--border #calculator__btn--reset.focus-visible,
+.calculator__container--border #calculator__btn--reset--banner.focus-visible {
   transform: none;
   outline: 2px solid var(--elipse-18-color);
 }
 
 .calculator__container--border .calculator__button:active,
 .calculator__container--border #calculator__btn--book:active,
-.calculator__container--border #calculator__btn--book--banner:active {
+.calculator__container--border #calculator__btn--book--banner:active,
+.calculator__container--border #calculator__btn--reset:active,
+.calculator__container--border #calculator__btn--reset--banner:active {
   transform: perspective(1px) translateZ(0px);
   outline: none;
 }
 
 .calculator__container--border:hover .calculator__button,
 .calculator__container--border:hover #calculator__btn--book,
-.calculator__container--border:hover #calculator__btn--book--banner {
+.calculator__container--border:hover #calculator__btn--book--banner,
+.calculator__container--border:hover #calculator__btn--reset,
+.calculator__container--border:hover #calculator__btn--reset--banner {
   background-color: #f1b620;
 }
 
@@ -2585,13 +2593,24 @@ main {
   fill: #CCB26E;
 }
 
-#calculator__btn--book,
-#calculator__btn--book--banner {
+.calculator__container--reset {
   margin-left: 10px;
+  flex-wrap: nowrap;
+}
+
+#calculator__btn--book,
+#calculator__btn--book--banner,
+#calculator__btn--reset,
+#calculator__btn--reset--banner {
   border: none;
   border-radius: 15px;
   line-height: 300%;
   padding: 0 10px;
+}
+
+#calculator__btn--reset,
+#calculator__btn--reset--banner {
+  margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -2743,5 +2762,9 @@ main {
 
   .header__address--link--calc {
     justify-content: space-between;
+  }
+
+  .calculator__container--reset {
+    margin-left: 0;
   }
 }

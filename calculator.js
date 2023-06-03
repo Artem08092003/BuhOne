@@ -78,16 +78,32 @@ function calculateCost(event) {
 
   resultOutput.textContent = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей`;
 
-  document.querySelector('#calculator__result--input').value = `Стоимость установки наружной рекламы ${locationSelect.value} для видео рекламы: ${cost} рублей.
+  document.querySelector('#calculator__result--input').value = `На ${locationSelect.value} на сумму: ${cost} рублей.
   Количество типов рекламы в одном баннере: ${quantityInput.value}.
   Сезонность: ${seasonSelect.value}.
   Дополнительные освещение: ${lighting}.
   Страховка: ${insurance}`;
 
   btnBook.textContent = `Забронировать`
+  resetBtn.textContent = `Сбросить`
 }
 
 document.querySelector("#calculator__form").addEventListener("submit", calculateCost);
+
+// функций Сброса
+const resetBtn = document.getElementById("calculator__btn--reset");
+
+resetBtn.addEventListener("click", function() {
+  locationSelect.value = "";
+  quantityInput.value = "";
+  seasonSelect.value = "";
+  document.getElementById("calculator__lighting").checked = false;
+  document.getElementById("calculator__insurance").checked = false;
+  resultOutput.textContent = "";
+  document.querySelector('#calculator__result--input').value = "";
+  btnBook.textContent = "";
+  resetBtn.textContent = "";
+});
 
 
 
@@ -153,13 +169,29 @@ function calculateBannerCost(event) {
 
   resultBannerOutput.textContent = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для баннерной рекламы: ${costBanner} рублей`;
 
-  document.querySelector('#calculator__result--input--banner').value = `Стоимость установки наружной рекламы ${locationBannerSelect.value} для баннерной рекламы: ${costBanner} рублей.
+  document.querySelector('#calculator__result--input--banner').value = `На ${locationBannerSelect.value} на сумму: ${costBanner} рублей.
   Двухстронняя(2) или Одностронняя(1) установка на одном баннере: ${quantityBannerInput.value}.
   Сезонность: ${seasonBannerSelect.value}.
   Дополнительные освещение: ${lightingBanner}.
   Страховка: ${insuranceBanner}`;
 
   btnBannerBook.textContent = `Забронировать`
+  resetBannerBtn.textContent = `Сбросить`
 }
 
 document.querySelector("#calculator__form--banner").addEventListener("submit", calculateBannerCost);
+
+// функций Сброса
+const resetBannerBtn = document.getElementById("calculator__btn--reset--banner");
+
+resetBannerBtn.addEventListener("click", function() {
+  locationBannerSelect.value = "";
+  quantityBannerInput.value = "";
+  seasonBannerSelect.value = "";
+  document.getElementById("calculator__lighting--banner").checked = false;
+  document.getElementById("calculator__insurance--banner").checked = false;
+  resultBannerOutput.textContent = "";
+  document.querySelector('#calculator__result--input--banner').value = "";
+  btnBannerBook.textContent = "";
+  resetBannerBtn.textContent = "";
+});
